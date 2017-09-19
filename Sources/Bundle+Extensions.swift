@@ -28,6 +28,7 @@ extension Bundle {
 
     static func messageKitAssetBundle() -> Bundle {
         let podBundle = Bundle(for: MessagesViewController.self)
+        return podBundle
         
         guard let resourceBundleUrl = podBundle.url(forResource: "MessageKitAssets", withExtension: "bundle") else {
             fatalError("MessageKit: Could not create path to the assets bundle")
